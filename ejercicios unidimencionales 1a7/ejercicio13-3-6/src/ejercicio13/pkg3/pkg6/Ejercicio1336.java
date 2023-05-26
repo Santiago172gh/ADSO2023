@@ -6,34 +6,27 @@ package ejercicio13.pkg3.pkg6;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Santiago Sandino
- */
 public class Ejercicio1336 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        //. Almacenar en un vector los números de 1 hasta n y posteriormente imprimir los números menores a 500.
-        
-         Scanner scan= new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         
         int contar;
         
-        System.out.println("ingrese hasta donde deseas contar ");
-        contar=scan.nextInt();
+        System.out.println("Ingrese hasta qué número desea contar: ");
+        contar = scan.nextInt();
         
-         int [] num= new int[contar];
-         
-          for (int i = 0; i < contar; i++) {
-            num[i] = i; //asigna 
+        int[] num = new int[contar];
+        
+        for (int i = 0; i < contar; i++) {
+            num[i] = i + 1;
         }
-        for (int i = 0; i < 500; i++) {
-            System.out.println("numero "+num[i]);
+        
+        for (int i = 0; i < contar; i++) {
+            if (num[i] < 500) {
+                System.out.println("Número: " + num[i]);
+            }
         }
     }
-    
 }
+
