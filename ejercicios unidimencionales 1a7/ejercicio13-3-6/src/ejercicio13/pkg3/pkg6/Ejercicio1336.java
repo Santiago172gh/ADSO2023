@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Maira Alejandra
+ * @author Santiago Sandino
  */
 public class Ejercicio1336 {
 
